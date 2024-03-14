@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- -------------------------------------------------+ -->
+  <title>TecnoUpdate</title>
+
+  <!--css-->
+  <link href="css/preloader-stage.css" type="text/css" rel="stylesheet" media="screen">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="../icon">
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- Additional plugins styles -->
+  <link href="css/prism.css" type="text/css" rel="stylesheet" media="screen">
+  <link href="css/simpleb.css" type="text/css" rel="stylesheet" media="screen">
+  <link href="css/justifiedGallery.css" type="text/css" rel="stylesheet" media="screen">
+
+  <!-- Assistance.css are used only for template support. No need to use it on "production" -->
+  <link href="css/assistance.css" type="text/css" rel="stylesheet" media="screen">
+  <!-- logo-->
+  <link class="logo"rel="website icon" type="png" href="img/vergil.png (1).png">
+<style type="text/css" id="operaUserStyle"></style><style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style></head>
+</head>
+
+
+<body class="">
+  <!-- Preloader START -->
+  <div class="stage-wrapper">
+    <div class="stage" style="opacity: 0;">
+
+      <div class="preloader-wrapper big active" style="display: none;">
+        <div class="spinner-layer">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Preloader END -->
+  <!-- Header START -->
+  <header>
+    <!-- Navigation Bar on the top, for medium and small devices -->
+    <div class="brand-custom hide-on-large-only"><img src="./proto_files/admin-logo-full.svg" alt="logo" class="logo responsive-img"></div>
+    <div class="navbar-fixed hide-on-large-only">
+      <nav>
+        <div class="nav-wrapper">
+          <ul class="right">
+            <li class="hide-on-small-only"><a href="http://mate.creatingo.com/#search-in-modal" class="modal-trigger"><i class="material-icons">Buscar</i></a></li>
+            <li class="hide-on-small-only"><a href="http://mate.creatingo.com/account.html"><i class="material-icons">perm_identity</i></a></li>
+            <li class="hide-on-small-only"><a href="http://mate.creatingo.com/login.html" target="_blank"><i class="material-icons">Salir</i></a></li>
+            <li class="toogle-side-nav"><a href="http://mate.creatingo.com/#" data-activates="slide-menu" class="button-collapse"><i class="material-icons">menu</i></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- Side Navigation - fixed for large (nice scroll with Simplebar plugin), slide/drag for medium and small devices -->
+    <div id="slide-menu" class="side-nav fixed" data-simplebar="init" style="transform: translateX(0px);"><div class="simplebar-track vertical" style="visibility: hidden;"><div class="simplebar-scrollbar"></div>
+    </div><div class="simplebar-track horizontal" style="visibility: hidden;">
+      <div class="simplebar-scrollbar"></div></div>
+      <div class="simplebar-scroll-content" style=" margin-bottom: -28px;">
+      <div class="simplebar-content" style="margin-right:-18px;padding-bottom: 18px;background: #272d2f">
+      <ul class="side-nav-main">
+<!-- Logo-->
+        <li class="logo hide-on-med-and-down">
+          <img src="css/img/1.png" alt="logo" class="logo responsive-img">
+        </li>
+        <li class="side-nav-inline hide-on-med-only"> <a href="http://mate.creatingo.com/login.html" class="inline waves-effect" target="_blank"><i class="material-icons">exit_to_app</i></a> <a href="http://mate.creatingo.com/account.html" class="inline waves-effect"><i class="material-icons">perm_identity</i></a> <a href="http://mate.creatingo.com/#search-in-modal" class="inline waves-effect modal-trigger"><i class="material-icons">search</i></a></li>
+        <ul class="collapsible" data-collapsible="accordion"></ul>
+<!-- opcion dashboard-->
+        <li><a href="http://mate.creatingo.com/#" class="waves-effect"><i class="material-icons left">dashboard</i>
+          <span >Inicio</span></a>
+        </li>
+          
+<!--Opcion Pagina-->
+          
+            <li><a class="collapsible-header waves-effect"><i class="material-icons left">description</i>
+              <span>Proyectos </span><span class="neutral badge">5</span></a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="http://mate.creatingo.com/account.html">Account</a></li>
+                  <li class="divider"></li>
+                  <li><a href="http://mate.creatingo.com/login.html" target="_blank">Login</a></li>
+                  <li class="divider"></li>
+                  <li><a href="http://mate.creatingo.com/register.html" target="_blank">Register</a></li>
+                  <li class="divider"></li>
+                  <li><a href="http://mate.creatingo.com/reset-password.html" target="_blank">Reset Password</a></li>
+                  <li class="divider"></li>
+                  <li><a href="http://mate.creatingo.com/js-gapein.html">Gallery</a></li>
+                </ul>
+              </div>
+            </li>
+            
+<!-- opcion java-->
+            <li><a class="collapsible-header waves-effect"><i class="material-icons left">settings</i>
+              <span>Configuración</span></a>
+              <div class="collapsible-body">
+                <ul class="collapsible" data-collapsible="accordion">
+                  <li><a class="collapsible-header waves-effect"><span>3rd-party JS</span></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a href="http://mate.creatingo.com/js-chart.html">Chart.js</a></li>
+                        <li class="divider"></li>
+                        <li><a href="http://mate.creatingo.com/js-gapein.html">Gapein.js</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="divider"></li>
+                  <li><a href="http://mate.creatingo.com/js-carousel.html">Carousel</a></li>
+                  <li class="divider"></li>
+                  <li><a href="http://mate.creatingo.com/js-collapsible.html">Collapsible</a></li>
+                  <li class="divider"></li>
+                  <li><a href="http://mate.creatingo.com/js-dialogs.html">Dialogs</a> </li>
+                  <li class="divider"></li>
+                  <li><a href="http://mate.creatingo.com/js-dropdown.html">Dropdown</a> </li>
+                  <li class="divider"></li>
+                  <li><a href="http://mate.creatingo.com/js-feature-discovery.html">FeatureDiscovery</a> </li>
+                  <li class="divider"></li>
+                  <li><a href="http://mate.creatingo.com/js-media.html">Media</a> </li>
+                  <li class="divider"></li>
+                  <li><a href="http://mate.creatingo.com/js-modals.html">Modals</a> </li>
+                  <li class="divider"></li>
+                  <li><a href="http://mate.creatingo.com/js-parallax.html">Parallax</a> </li>
+                  <li class="divider"></li>
+                  <li><a href="http://mate.creatingo.com/js-pushpin.html">Pushpin</a> </li>
+                  <li class="divider"></li>
+                  <li><a href="http://mate.creatingo.com/js-scrollfire.html">ScrollFire</a> </li>
+                  <li class="divider"></li>
+                  <li><a href="http://mate.creatingo.com/js-scrollspy.html">Scrollspy</a> </li>
+                  <li class="divider"></li>
+                  <li><a href="http://mate.creatingo.com/js-sidenav.html">SideNav</a> </li>
+                  <li class="divider"></li>
+                  <li><a href="http://mate.creatingo.com/js-tabs.html">Tabs</a> </li>
+                  <li class="divider"></li>
+                  <li><a href="http://mate.creatingo.com/js-transitions.html">Transitions</a> </li>
+                  <li class="divider"></li>
+                  <li><a href="http://mate.creatingo.com/js-waves.html">Waves</a> </li>
+                </ul>
+              </div>
+            </li>
+             
+    </div>
+  </div>
+</div>
+<!----parte final de la barra vertical----->
+    <!-- Search in Modal START -->
+    <div id="search-in-modal" class="modal" style="z-index: 1003;">
+      <div class="modal-content">
+        <nav class="flat">
+          <div class="nav-wrapper">
+            <form>
+              <div class="input-field">
+                <input id="search" type="search" class="secondary-color-text white no-border-line" style="margin:0;" required="">
+                <label for="search" class="label-icon"><i class="material-icons secondary-color-text label-icon">search</i></label>
+                <i class="material-icons modal-action modal-close">close</i> </div>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div class="modal-footer"> <a href="http://mate.creatingo.com/#!" class="modal-action modal-close waves-effect waves-green btn-flat right">Search now</a> </div>
+    </div>
+    <!-- Search in Modal END -->
+  </header>
+  <!-- Header END -->
+  <!-- Main START -->
+  <main>
+    <div class="container">
+      <h1 class="thin animate__animated animate__bounce">Inicio</h1>
+      <div id="dashboard">
+        <div class="row">
+<!-- Datos Sobre Mi -->
+          <div class="col s12 m8">
+            <div class="card">
+              <div class="card-header"> <span class="card-title secondary-color-text">Datos Sobre Mi </span> 
+              <span class="card-title soft-text">  </span> <span class="card-title primary-color-text"> </span> </div>
+              <div class="divider"></div>
+              <div class="info">
+                <li>
+                  <span >Mi Nombre es Damián , Acá mostrare todos mis códigos, proyectos y el proceso de aprendizaje de programacion que he realizado en estos años,
+                    en el cuales algunos son hechos en java otros en html, php.
+                  </span> 
+                </li>
+                <li>
+                  <span>Mi objetivo principal es obtener una titulación en Ingeniería Informática, lo que me permitirá adquirir un profundo conocimiento en esta disciplina. Además, 
+                  aspiro a utilizar esta formación académica como base para iniciar mi carrera profesional en un rol relacionado con la informática, donde pueda aplicar de manera efectiva mis habilidades y conocimientos adquiridos. 
+                  A largo plazo, tengo la ambición de emprender y establecer mi propia empresa en el sector de la tecnología, donde pueda contribuir al desarrollo de soluciones innovadoras y tecnológicas para satisfacer las necesidades del mercado y
+                   la sociedad en la que se vivira hoy en dia.</span>
+                  </li>
+                </div>
+            </div>
+          </div>
+<!-- Finalizacion sobre mi -->
+          
+<!--Preferencias -->
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-header"> <span class="card-title cyan-text text-accent-4">Intereces </span>
+                 <span class="card-title soft-text">  </span> 
+                 <span class="card-title amber-text text-darken-3"> </span>
+              </div>
+              <div class="divider"></div>
+              <div class="info">
+                <li><span class="progra">Programación</span> </li>
+                <li><span class="robo">Robotica</span></li>
+                <li><span class="musica"> Musica</span></li>
+                <li><span class="peli"> Peliculas y Series  </span></li>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header"> <span class="card-title cyan-text text-accent-4">Habilidades Profecionales </span>
+                 <span class="card-title soft-text">  </span> 
+                 <span class="card-title amber-text text-darken-3"> </span>
+              </div>
+              <div class="divider"></div>
+              <div class="info">
+                <li>
+                  <span class="Habilidad_1">Realizar Mantenimiento de diferentes equipos de forma interna y externa </span> 
+                </li>
+                
+                <li>
+                  <span >Realizar limpieza a los equipos y dispositivos </span>
+                </li>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header"> <span class="card-title cyan-text text-accent-4"> Redes Sociales </span>
+                 <span class="card-title soft-text">  </span> 
+                 <span class="card-title amber-text text-darken-3"> </span>
+              </div>
+              <div class="divider"></div>
+              <div class="info">
+                <li><a href="https://www.instagram.com/lynk_rookie/?hl=es-la"> Instagram</a></li>
+                <li><a href="https://kick.com/lynk-rookie"> Kick</a></li>
+                <li><a href="https://github.com/LynkRookie"> Github</a></li>
+              </div>
+            </div>
+          </div>
+<!--Finalizacion de preferencias-->
+        </div>
+<!-- Lenguajes de Programacion Aprendidos-->    
+        <div class="row">
+          
+          <div class="col s12 m6">
+            <div id="tasks" class="card hoverabe">
+              <ul class="collection with-header">
+                <li class="collection-header primar-color">
+  <!--TITULO-->
+                  <h5 class="light secondary-color-text">Lenguajes de Programacion Adquiridos
+                    <a href="http://mate.creatingo.com/#!" class="secondary-content tooltipped" data-position="bottom" data-delay="50" data-tooltip="View All" data-tooltip-id="57cb2f27-2ebe-588c-2e4d-29e89f95de95">
+                      
+                    </a>
+                  </h5>
+                </li>
+  <!-- Fin del titulo-->
+
+    <!--SUBTITULO DE HTML-->
+                <li class="collection-item in-progress">
+    
+                  <p>HTML<br>
+                    <span class="badge static pink accent-4">Development</span> <span class="secondary-content">75%</span> </p>
+                  <div class="progress">
+                    <div class="determinate" style="width: 75%"></div>
+                  </div>
+                </li>
+    <!--FIN DE SUBTITULO DEL HTML-->
+                <li class="collection-item in-progress">
+                  <p>CSS<br>
+                    <span class="badge static blue">Development</span> <span class="secondary-content">67%</span> </p>
+                  <div class="progress">
+                    <div class="determinate" style="width: 67%"></div>
+                  </div>
+                </li>
+    <!--FIN DE SUBTITULO DE CSS-->
+    
+    <!--SUBTITULO PHP-->
+                <li class="collection-item finished">
+                  <p>PHP<br>
+                    <span class="badge static blue">Development</span> <span class="secondary-content"></span> </p>
+                    <p> <span class="secondary-content">55%</span> </p>
+                  <div class="progress">
+                    <div class="determinate" style="width: 55%"></div>
+                  </div>
+                  </li>
+    <!--FIN DEL SUBTITULO DE PHP-->
+
+    <!--SUBTITULO DE BOOSTRAP-->
+                <li class="collection-item finished">
+                  <p>BOOSTRAP<br>
+                    <p><span class="badge static amber accent-3">Development</span> <span class="secondary-content"></span> </p>
+                    <span class="secondary-content">50%</span> </p>
+                  <div class="progress">
+                    <div class="determinate" style="width: 50%"></div>
+                  </div>
+                
+                  </li>
+    <!--FIN DEL SUBTITULO DE BOOSTRAP-->
+
+    <!--SUBTITULO DE PHYTHON-->
+                <li class="collection-item finished">
+                  <p>PHYTHON<br>
+                    <span class="badge static blue">Development</span> <span class="secondary-content"></span> </p>
+                    <span class="secondary-content">15%</span> </p>
+                    <div class="progress">
+                      <div class="determinate" style="width: 15%"></div>
+                    </div>
+                  </li>
+    <!--FIN DEL SUBTITULO DE PHYTHON-->
+
+    <!--SUBTITULO DE JAVA-->
+     <li class="collection-item finished">
+      <p>JAVA<br>
+        <span class="badge static blue">Development</span> <span class="secondary-content"></span> </p>
+        <span class="secondary-content">15%</span> </p>
+        <div class="progress">
+          <div class="determinate" style="width: 15%"></div>
+        </div>
+      </li>
+    <!--FIN DEL SUBTITULO DE JAVA-->
+
+    <!--SUBTITULO DE SQL-->
+    <li class="collection-item finished">
+      <p>SQL<br>
+        <span class="badge static blue">Development</span> <span class="secondary-content"></span> </p>
+        <span class="secondary-content">35%</span> </p>
+        <div class="progress">
+          <div class="determinate" style="width: 35%"></div>
+        </div>
+      </li>
+    <!--FIN DEL SUBTITULO DE SQL-->
+              </ul>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+<!-- TERMINO DEL PANEL -->
+
+  </main>
+  <!-- Final del cuerpo -->
+
+  <!-- -------------------------------------------------+
+	Inicio de los  Scripts
++-------------------------------------------------- -->
+
+  <!-- Libreria jQuery  -->
+  <script type="text/javascript" src="css/js/jquery-3.2.1.min.js.descarga"></script>
+  <script>
+    if (!window.jQuery) {
+      document.write('<script src="assets/js/bin/jquery-3.2.1.min.js"><\/script>');
+    }
+
+  </script>
+  <!-- Plugins jQuery  -->
+  <script type="text/javascript" src="css/js/prism.js.descarga"></script>
+  <script type="text/javascript" src="css/js/simplebar.min.js.descarga"></script>
+  <!--materialize js-->
+  <script type="text/javascript" src="css/js/materialize.min.js.descarga"></script>
+  <script type="text/javascript" src="css/js/initialize.js.descarga"></script>
+  <!-- chart js-->
+  <script type="text/javascript" src="css/js/chart.bundle.min.js.descarga"></script>
+  <!-- galeria js-->
+  <script type="text/javascript" src="css/js/query.justifiedGallery.min.js.descarga"></script>
+  <!-- count to js-->
+  <script type="text/javascript" src="css/js/jquery.countTo.js.descarga"></script>
+  <script>
+    var randomScalingFactor = function() {
+      return Math.round(Math.random() * 100)
+    };
+    var lineChartData = {
+      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      datasets: [{
+          label: "My First dataset",
+          backgroundColor: "rgba(99,129,143,0.2)",
+          borderWidth: 2,
+          borderColor: "rgba(99,129,143,1)",
+          pointRadius: 4,
+          pointBackgroundColor: "rgba(99,129,143,1)",
+          pointBorderColor: "#fff",
+          pointHoverRadius: 6,
+          pointHoverBackgroundColor: "#fff",
+          pointHoverBorderColor: "rgba(99,129,143,1)",
+          data: [24, 37, 52, 45, 68, 72, 85]
+        },
+        {
+          label: "My Second dataset",
+          backgroundColor: "rgba(150,203,0,0.2)",
+          borderWidth: 2,
+          borderColor: "rgba(150,203,0,1)",
+          pointRadius: 4,
+          pointBackgroundColor: "rgba(150,203,0,1)",
+          pointBorderColor: "#fff",
+          pointHoverRadius: 6,
+          pointHoverBackgroundColor: "#fff",
+          pointHoverBorderColor: "rgba(150,203,0,1)",
+          data: [31, 42, 58, 35, 60, 80, 95]
+        }
+      ]
+    };
+
+    var doughnutData = {
+      labels: ["New", "Returning"],
+      datasets: [{
+        label: "My Doughnut dataset",
+        data: [42, 58],
+        backgroundColor: ["#00b8d4", "#ff8f00"]
+      }]
+    };
+
+    var barChartData1 = {
+      labels: ["2010", "2011", "2012", "2013", "2014", "2015"],
+      datasets: [{
+        backgroundColor: "rgba(255,255,255,0.5)",
+        borderColor: "rgba(255,255,255,0.8)",
+        hoverBackgroundColor: "rgba(255,255,255,0.75)",
+        hoverBorderColor: "rgba(255,255,255,1)",
+        data: [380, 900, 1600, 2300, 4000, 4800]
+      }]
+    };
+
+    var barChartData2 = {
+      labels: ["1", "2", "3", "4", "5", "6"],
+      datasets: [{
+        backgroundColor: "rgba(255,255,255,0.5)",
+        borderColor: "rgba(255,255,255,0.8)",
+        hoverBackgroundColor: "rgba(255,255,255,0.75)",
+        hoverBorderColor: "rgba(255,255,255,1)",
+        data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+      }]
+    };
+
+    var barChartData3 = {
+      labels: ["1", "2", "3", "4", "5", "6"],
+      datasets: [{
+        backgroundColor: "rgba(255,255,255,0.5)",
+        borderColor: "rgba(255,255,255,0.8)",
+        hoverBackgroundColor: "rgba(255,255,255,0.75)",
+        hoverBorderColor: "rgba(255,255,255,1)",
+        data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+      }]
+    };
+
+    var barChartData4 = {
+      labels: ["1", "2", "3", "4", "5", "6"],
+      datasets: [{
+        backgroundColor: "rgba(255,255,255,0.5)",
+        borderColor: "rgba(255,255,255,0.8)",
+        hoverBackgroundColor: "rgba(255,255,255,0.75)",
+        hoverBorderColor: "rgba(255,255,255,1)",
+        data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+      }]
+    };
+
+    var barChartOptions = {
+      legend: {
+        display: false
+      },
+      scales: {
+        xAxes: [{
+          display: false
+        }],
+        yAxes: [{
+          display: false
+        }]
+      }
+    };
+
+    window.onload = function() {
+
+      /* Initialize gallery */
+      $('#gallery').justifiedGallery({
+        lastRow: 'justify',
+        margins: 5
+      });
+
+      /* Hide Preloader */
+      $('.preloader-wrapper').css({
+        display: "none"
+      });
+
+      /* Fade to page */
+      $('.stage').velocity({
+        opacity: 0
+      }, 1000, function() {
+        $('body').removeClass('loading');
+      });
+
+      /* Display Graphs and Counting with delay */
+      setTimeout(function() {
+        var ctx1 = document.getElementById("graph-lined");
+        window.myLine = new Chart(ctx1, {
+          type: 'line',
+          data: lineChartData,
+          options: {
+            legend: {
+              display: false
+            }
+          }
+        });
+
+        var ctx2 = document.getElementById("graph-doughnut");
+        window.myDoughnut = new Chart(ctx2, {
+          type: 'doughnut',
+          data: doughnutData,
+          options: {
+            legend: {
+              display: false
+            }
+          }
+        });
+
+        var ctxB1 = document.getElementById("graph-bar1");
+        window.myBar1 = new Chart(ctxB1, {
+          type: 'bar',
+          data: barChartData1,
+          options: barChartOptions
+        });
+
+        var ctxB2 = document.getElementById("graph-bar2");
+        window.myBar2 = new Chart(ctxB2, {
+          type: 'bar',
+          data: barChartData2,
+          options: barChartOptions
+        });
+
+        var ctxB3 = document.getElementById("graph-bar3");
+        window.myBar3 = new Chart(ctxB3, {
+          type: 'bar',
+          data: barChartData3,
+          options: barChartOptions
+        });
+
+        var ctxB4 = document.getElementById("graph-bar4");
+        window.myBar4 = new Chart(ctxB4, {
+          type: 'bar',
+          data: barChartData4,
+          options: barChartOptions
+        });
+
+        $('.countup').countTo();
+
+
+      }, 200);
+
+    }
+
+  </script>
+<div class="material-tooltip" id="57cb2f27-2ebe-588c-2e4d-29e89f95de95"><span>View All</span><div class="backdrop"></div></div><div class="hiddendiv common"></div><div class="drag-target" data-sidenav="slide-menu" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div></body></html>
